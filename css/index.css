@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  color: #fff;
+}
+.fl {
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 700px;
+  height: 300px;
+  margin: 100px auto;
+  background: url(../images/1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  border-bottom: 1px solid #fff;
+}
+
+.countdown {
+  height: 120px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 120px;
+}
+
+.countdown span {
+  margin: 0 10px;
+}
+
+.countdown .item {
+  position: relative;
+  width: 65px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.countdown .item div {
+  width: 65px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.countdown .item div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
